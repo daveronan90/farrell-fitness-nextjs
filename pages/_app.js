@@ -5,19 +5,25 @@ import "aos/dist/aos.css";
 import { useEffect } from "react";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
-import { NavBar } from "../Components/NavBar";
+import { useRouter } from "next/dist/client/router";
 
 library.add(fab);
 
 function MyApp({ Component, pageProps }) {
+  const { pathname } = useRouter();
+
   useEffect(() => {
     AOS.init();
   }, []);
 
   return (
-    <div className="font-Roboto text-white">
+    <div className="font-Roboto text-white bg-black">
       <Head>
-        <title>Farrell Fitness</title>
+        <title>
+          Farrell Fitness {pathname !== "/" ? "|" : ""}{" "}
+          {pathname.substring(1).charAt(0).toUpperCase() +
+            pathname.substring(2)}
+        </title>
         <link rel="icon" href="/assets/svg/FF.svg" />
       </Head>
       <Component {...pageProps} />
