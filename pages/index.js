@@ -11,7 +11,7 @@ export default function Home() {
         src="/assets/videos/mainVideo.mp4"
         className="fixed inset-0 h-screen w-screen object-cover"
       ></video>
-      <div className="fixed inset-0 bg-black bg-opacity-70 w-screen h-screen flex flex-col justify-center lg:justify-start">
+      <div className="fixed inset-0 bg-black bg-opacity-70 w-screen h-full flex flex-col justify-center lg:justify-start">
         <NavBar />
         <div
           data-aos="fade-down"
