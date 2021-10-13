@@ -13,7 +13,7 @@ export default function Home() {
       ></video>
       <div className="fixed inset-0 bg-black bg-opacity-70 w-screen h-full flex flex-col justify-center lg:justify-start">
         <NavBar />
-        <div className="pb-60 flex flex-col h-full items-center lg:items-start justify-center lg:ml-48 lg:w-2/5 mx-4">
+        <div className="pb-24 flex flex-col h-full items-center lg:items-start justify-center lg:ml-48 lg:w-2/5 mx-4">
           <h1 className="flex flex-col">
             <span className="font-thin text-5xl">Welcome To</span>
             <span className="uppercase font-bold text-5xl">
