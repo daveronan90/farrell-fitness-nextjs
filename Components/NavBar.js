@@ -34,32 +34,22 @@ export const NavBar = () => {
           />
         </div>
         <div className="flex flex-col justify-center items-center">
-          <Link href="/products">
-            <a>Products</a>
+          <Link href="/services">
+            <a>services</a>
           </Link>
           <div
             className={`${
-              router.pathname === "/products" ? "bg-yellow-700" : "bg-opacity-0"
+              router.pathname === "/services" ? "bg-yellow-700" : "bg-opacity-0"
             } h-1 w-1/2 rounded-full mt-2`}
           />
         </div>
         <div className="flex flex-col justify-center items-center">
-          <Link href="/about">
-            <a>About Us</a>
+          <Link href="/coaches">
+            <a>Coaches</a>
           </Link>
           <div
             className={`${
-              router.pathname === "/about" ? "bg-yellow-700" : "bg-opacity-0"
-            } h-1 w-1/2 rounded-full mt-2`}
-          />
-        </div>
-        <div className="flex flex-col justify-center items-center">
-          <Link href="/contact">
-            <a>Contact Us</a>
-          </Link>
-          <div
-            className={`${
-              router.pathname === "/contact" ? "bg-yellow-700" : "bg-opacity-0"
+              router.pathname === "/coaches" ? "bg-yellow-700" : "bg-opacity-0"
             } h-1 w-1/2 rounded-full mt-2`}
           />
         </div>
