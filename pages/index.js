@@ -13,12 +13,7 @@ export default function Home() {
       ></video>
       <div className="fixed inset-0 bg-black bg-opacity-70 w-screen h-full flex flex-col justify-center lg:justify-start">
         <NavBar />
-        <div
-          data-aos="fade-down"
-          data-aos-easing="linear"
-          data-aos-duration="700"
-          className="pb-60 flex flex-col h-full items-center lg:items-start justify-center lg:ml-48 lg:w-2/5 mx-4"
-        >
+        <div className="pb-60 flex flex-col h-full items-center lg:items-start justify-center lg:ml-48 lg:w-2/5 mx-4">
           <h1 className="flex flex-col">
             <span className="font-thin text-5xl">Welcome To</span>
             <span className="uppercase font-bold text-5xl">
@@ -37,14 +32,18 @@ export default function Home() {
           </a>
         </div>
         <div className="flex absolute bottom-6 space-x-10 items-center justify-center w-full">
-          <FontAwesomeIcon
-            className="w-6 h-6 cursor-pointer transition-all hover:text-yellow-700"
-            icon={["fab", "facebook"]}
-          />
-          <FontAwesomeIcon
-            className="w-6 h-6 cursor-pointer transition-all hover:text-yellow-700"
-            icon={["fab", "instagram"]}
-          />
+          <a href="https://www.facebook.com/farrellfitness17/">
+            <FontAwesomeIcon
+              className="w-6 h-6 cursor-pointer transition-all hover:text-yellow-700"
+              icon={["fab", "facebook"]}
+            />
+          </a>
+          <a href="https://www.instagram.com/farrellfitness17/">
+            <FontAwesomeIcon
+              className="w-6 h-6 cursor-pointer transition-all hover:text-yellow-700"
+              icon={["fab", "instagram"]}
+            />
+          </a>
         </div>
       </div>
     </>
