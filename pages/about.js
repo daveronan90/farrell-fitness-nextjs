@@ -4,8 +4,20 @@ const about = () => {
   return (
     <div className="">
       <NavBar />
+      <div
+        className="pb-96 bg-fixed h-screen bg-cover bg-center bg-no-repeat uppercase flex items-center justify-center font-bold text-2xl relative text-center"
+        style={{
+          backgroundImage: `url("/assets/images/personalTraining.jpg")`,
+        }}
+      >
+        <div className="absolute inset-0 bg-black opacity-60 drop-shadow" />
+        <span className="relative">
+          Meet The <br />
+          <span className="text-yellow-700 text-4xl">Farrell Fitness</span>{" "}
+          <br /> Coaches
+        </span>
+      </div>
       <div className="mx-4 py-10 grid grid-cols-1 grid-flow-row gap-4 md:gap-10 lg:grid-cols-3">
-        <img className="col-span-1 md:col-span-3" src="/assets/images/personalTraining.jpg" alt="Team Trainers" />
         <div
           data-aos="zoom-in"
           data-aos-easing="linear"
@@ -19,8 +31,7 @@ const about = () => {
             className="absolute bg-gradient-to-tr to-black from-yellow-900 bottom-0 left-0 right-0 h-1/5"
           >
             <span className="absolute bottom-0 right-0 uppercase font-bold pr-3 opacity-70 italic">
-              Shannon
-              Trainer
+              Shannon Coach
             </span>
           </div>
           <img
@@ -32,7 +43,7 @@ const about = () => {
           data-aos="zoom-in"
           data-aos-easing="linear"
           data-aos-duration="700"
-          className="relative hover:shadow-3xl cursor-pointer transform transition-all row-start-2 row-end-3 lg:col-start-2 lg:col-end-3"
+          className="relative hover:shadow-3xl cursor-pointer transform transition-all lg:col-start-2 lg:col-end-3 row-start-1 row-end-2"
         >
           <div
             style={{
@@ -41,8 +52,7 @@ const about = () => {
             className="absolute bg-gradient-to-tr to-black from-yellow-900 bottom-0 left-0 right-0 h-1/5"
           >
             <span className="absolute bottom-0 right-0 uppercase font-bold pr-3 opacity-70 italic">
-              Robbie
-              Owner
+              Robbie Head Coach
             </span>
           </div>
           <img
@@ -63,7 +73,7 @@ const about = () => {
             className="absolute bg-gradient-to-tr to-black from-yellow-900 bottom-0 left-0 right-0 h-1/5"
           >
             <span className="absolute bottom-0 right-0 uppercase font-bold pr-3 opacity-70 italic">
-              Eoghan Trainer
+              Eoghan Coach
             </span>
           </div>
           <img

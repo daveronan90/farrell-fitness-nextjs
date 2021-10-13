@@ -17,7 +17,7 @@ export default function Home() {
           data-aos="fade-down"
           data-aos-easing="linear"
           data-aos-duration="700"
-          className="flex flex-col h-full items-center lg:items-start justify-center lg:ml-48 lg:w-2/5 mx-4"
+          className="pb-60 flex flex-col h-full items-center lg:items-start justify-center lg:ml-48 lg:w-2/5 mx-4"
         >
           <h1 className="flex flex-col">
             <span className="font-thin text-5xl">Welcome To</span>
