@@ -26,6 +26,7 @@ module.exports = {
       indigo: colors.indigo,
       purple: colors.violet,
       pink: colors.pink,
+      bioGray: "#343434",
     },
     spacing: {
       px: "1px",
@@ -49,6 +50,7 @@ module.exports = {
       14: "3.5rem",
       16: "4rem",
       20: "5rem",
+      22: "5.5rem",
       24: "6rem",
       28: "7rem",
       32: "8rem",
@@ -424,6 +426,7 @@ module.exports = {
       4: "repeat(4, minmax(0, 1fr))",
       5: "repeat(5, minmax(0, 1fr))",
       6: "repeat(6, minmax(0, 1fr))",
+      7: "auto 1fr"
     },
     height: (theme) => ({
       auto: "auto",
@@ -499,7 +502,7 @@ module.exports = {
       normal: "0em",
       wide: "0.025em",
       wider: "0.05em",
-      widest: "0.1em",
+      widest: "0.3em",
     },
     lineHeight: {
       none: "1",
@@ -677,6 +680,8 @@ module.exports = {
       110: "1.1",
       125: "1.25",
       150: "1.5",
+      500: "5",
+      1000: "10",
     },
     sepia: {
       0: "0",

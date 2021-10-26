@@ -1,23 +1,17 @@
 import "../styles/globals.css";
 import Head from "next/head";
-import AOS from "aos";
-import "aos/dist/aos.css";
-import { useEffect } from "react";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
 import { useRouter } from "next/dist/client/router";
+import NavBar from "../Components/NavBar";
 
 library.add(fab);
 
 function MyApp({ Component, pageProps }) {
   const { pathname } = useRouter();
 
-  useEffect(() => {
-    AOS.init();
-  }, []);
-
   return (
-    <div className="font-Roboto text-white bg-black">
+    <>
       <Head>
         <title>
           Farrell Fitness {pathname !== "/" ? "|" : ""}{" "}
@@ -26,8 +20,17 @@ function MyApp({ Component, pageProps }) {
         </title>
         <link rel="icon" href="/assets/svg/FF.svg" />
       </Head>
-      <Component {...pageProps} />
-    </div>
+      <div
+        className="font-Roboto text-white grid h-screen"
+        style={{
+          backgroundImage: "url('/assets/images/bg.jpg')",
+          gridTemplateRows: "auto 1fr",
+        }}
+      >
+        <NavBar />
+        <Component {...pageProps} />
+      </div>
+    </>
   );
 }
 

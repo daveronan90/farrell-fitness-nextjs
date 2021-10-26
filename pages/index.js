@@ -1,51 +1,23 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { NavBar } from "../Components/NavBar";
+import FFLogo from "../public/assets/svg/FF.svg";
 
 export default function Home() {
   return (
-    <>
-      <video
-        autoPlay
-        muted
-        loop
-        src="/assets/videos/mainVideo.mp4"
-        className="fixed inset-0 h-screen w-screen object-cover"
-      ></video>
-      <div className="fixed inset-0 bg-black bg-opacity-70 w-screen h-full flex flex-col justify-center lg:justify-start">
-        <NavBar />
-        <div className="pb-24 flex flex-col h-full items-center lg:items-start justify-center lg:ml-48 lg:w-2/5 mx-4">
-          <h1 className="flex flex-col">
-            <span className="font-thin text-5xl">Welcome To</span>
-            <span className="uppercase font-bold text-5xl">
-              Farrell Fitness
-            </span>
-          </h1>
-          <p className="my-10">
-            The state of the art sporting facility, catering to all your fitness
-            needs. Do you want to be the best version of yourself...?
-          </p>
-          <a
-            href="https://www.legitfit.com/"
-            className="bg-yellow-700 hover:bg-yellow-500 font-bold py-2 px-4 rounded-full transform transition-all"
-          >
-            Join us now!
-          </a>
-        </div>
-        <div className="flex absolute bottom-6 space-x-10 items-center justify-center w-full">
-          <a href="https://www.facebook.com/farrellfitness17/">
-            <FontAwesomeIcon
-              className="w-6 h-6 cursor-pointer transition-all hover:text-yellow-700"
-              icon={["fab", "facebook"]}
-            />
-          </a>
-          <a href="https://www.instagram.com/farrellfitness17/">
-            <FontAwesomeIcon
-              className="w-6 h-6 cursor-pointer transition-all hover:text-yellow-700"
-              icon={["fab", "instagram"]}
-            />
-          </a>
-        </div>
+    <main className="h-full flex flex-col items-center justify-evenly">
+      <FFLogo />
+      <div className="mx-4">
+        <h2 className="uppercase tracking-widest font-bold text-lg text-gray-400 leading-5 pb-2">
+          State of the art gym
+        </h2>
+        <h1 className="text-4xl tracking-tight font-extrabold w-10/12 leading-9">
+          Get in the best shape of your life!
+        </h1>
       </div>
-    </>
+      <a
+        href="/"
+        className="bg-yellow-700 rounded-full font-bold py-2 px-7 shadow-md"
+      >
+        Join up Now!
+      </a>
+    </main>
   );
 }
