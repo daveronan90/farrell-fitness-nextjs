@@ -2,7 +2,7 @@ import FFLogo from "../public/assets/svg/FF.svg";
 
 export default function Home() {
   return (
-    <main className="h-full flex flex-col items-center justify-evenly">
+    <main className="h-full flex flex-col items-center justify-evenly md:grid md: grid-cols-2">
       <FFLogo />
       <div className="mx-4">
         <h2 className="uppercase tracking-widest font-bold text-lg text-gray-400 leading-5 pb-2">
