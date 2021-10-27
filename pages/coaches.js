@@ -2,7 +2,7 @@ const about = () => {
   return (
     <main
       className="relative overflow-y-auto grid gap-20 lg:gap-5 py-20 lg:grid-cols-3 lg:mx-32 bg-cover bg-center lg:content-end"
-      style={{ backgroundImage: "url('/assets/images/personalTraining.jpg')" }}
+      style={{ backgroundImage: "url('/assets/images/personalTraining-min.jpg')" }}
     >
       <section className="h-full flex flex-col items-center justify-center lg:col-start-2">
         <div className="relative mt-24 w-72 h-96 bg-ffYellow rounded-3xl">
@@ -10,7 +10,7 @@ const about = () => {
           <div className="rounded-full h-48 w-48 bg-ffYellow absolute -top-24 left-12" />
           <div
             className="rounded-full h-44 w-44 bg-black absolute -top-22 left-14 bg-no-repeat bg-cover bg-center"
-            style={{ backgroundImage: "url('/assets/images/robbie.jpg')" }}
+            style={{ backgroundImage: "url('/assets/images/robbie-min.jpg')" }}
           />
           <div className="absolute flex flex-col justify-center items-center text-center top-24 px-8">
             <h2 className="text-lg">Robbie</h2>
@@ -31,7 +31,7 @@ const about = () => {
           <div className="rounded-full h-48 w-48 bg-ffYellow absolute -top-24 left-12" />
           <div
             className="rounded-full h-44 w-44 bg-black absolute -top-22 left-14 bg-no-repeat bg-cover bg-center"
-            style={{ backgroundImage: "url('/assets/images/eoghan.jpg')" }}
+            style={{ backgroundImage: "url('/assets/images/eoghan-min.jpg')" }}
           />
           <div className="absolute flex flex-col justify-center items-center text-center top-24 px-8">
             <h2 className="text-lg">Eoghan</h2>
@@ -50,7 +50,7 @@ const about = () => {
           <div className="rounded-full h-48 w-48 bg-ffYellow absolute -top-24 left-12" />
           <div
             className="rounded-full h-44 w-44 bg-black absolute -top-22 left-14 bg-no-repeat bg-cover bg-center"
-            style={{ backgroundImage: "url('/assets/images/shannon.jpg')" }}
+            style={{ backgroundImage: "url('/assets/images/shannon-min.jpg')" }}
           />
           <div className="absolute flex flex-col justify-center items-center text-center top-24 px-8">
             <h2 className="text-lg">Shannon</h2>

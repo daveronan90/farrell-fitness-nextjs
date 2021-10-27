@@ -23,7 +23,7 @@ function MyApp({ Component, pageProps }) {
       <div
         className="font-Roboto text-white grid h-screen"
         style={{
-          backgroundImage: "url('/assets/images/bg.jpg')",
+          backgroundImage: "url('/assets/images/bg-min.png')",
           gridTemplateRows: "auto 1fr",
         }}
       >
