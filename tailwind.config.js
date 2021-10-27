@@ -27,6 +27,7 @@ module.exports = {
       purple: colors.violet,
       pink: colors.pink,
       bioGray: "#343434",
+      ffYellow: "#E06B16"
     },
     spacing: {
       px: "1px",
@@ -680,6 +681,7 @@ module.exports = {
       110: "1.1",
       125: "1.25",
       150: "1.5",
+      175:"1.75",
       500: "5",
       1000: "10",
     },
