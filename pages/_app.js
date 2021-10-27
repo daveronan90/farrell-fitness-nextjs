@@ -14,11 +14,14 @@ function MyApp({ Component, pageProps }) {
     <>
       <Head>
         <title>
-          Farrell Fitness {pathname !== "/" ? "|" : ""}{" "}
+          Farrell Fitness {pathname !== "/" ? "|" : "| Gym Fitness & Golf"}{" "}
           {pathname.substring(1).charAt(0).toUpperCase() +
             pathname.substring(2)}
         </title>
+        <meta name="description" content="At Farrell Fitness, we're focused on you and providing you with the tools and solutions you need to achieve your fitness goals."/>
         <link rel="icon" href="/assets/svg/FF.svg" />
+        <meta name="author" content="Dave Ronan"/>
+        <meta name="keywords" content="gym, fitness, golf, lifting, gym near me, workout, diet, trackman, wexford gym"/>
         <link
           rel="stylesheet"
           type="text/css"
