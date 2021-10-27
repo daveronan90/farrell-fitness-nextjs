@@ -50,6 +50,17 @@ export const NavBar = () => {
               Coaches
             </a>
           </Link>
+          <Link href="/results">
+            <a
+              className={`border-t-4 lg:border-b-4 lg:border-t-0 w-1/3 ${
+                router.pathname === "/results"
+                  ? "border-ffYellow text-ffYellow"
+                  : "border-gray-600"
+              }`}
+            >
+              Results
+            </a>
+          </Link>
         </ul>
         <div className="hidden lg:flex lg:w-2/6 space-x-8 transform justify-end">
           <a href="https://www.facebook.com/farrellfitness17/">
