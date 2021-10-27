@@ -1,3 +1,8 @@
+import Timetable from "../Components/Timetable";
+import { classTableData } from "../fixtures/classesTimetableData";
+import { golfTableData } from "../fixtures/golfTimetableData";
+import { gymTableData } from "../fixtures/gymTimetableData";
+
 const services = () => {
   return (
     <main className="overflow-y-auto grid grid-flow-row gap-10 pb-10 lg:mx-32">
@@ -25,6 +30,7 @@ const services = () => {
             Sign up for pricing!
           </a>
         </div>
+        <Timetable tableData={gymTableData} />
       </section>
       <section className="grid grid-flow-row gap-10">
         <video
@@ -57,6 +63,7 @@ const services = () => {
             Sign up for pricing!
           </a>
         </div>
+        <Timetable tableData={classTableData} />
       </section>
       <section className="grid grid-flow-row gap-10">
         <video src="/assets/videos/trackman.mp4" autoPlay loop muted></video>
@@ -82,6 +89,7 @@ const services = () => {
             Sign up for pricing!
           </a>
         </div>
+        <Timetable tableData={golfTableData} />
       </section>
     </main>
   );

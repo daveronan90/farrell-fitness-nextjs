@@ -9,17 +9,17 @@ export const NavBar = () => {
   const [isOpen, setOpen] = useState(false);
 
   return (
-    <header className="md:mx-32">
-      <nav className="flex flex-col md:flex-row md:flex-shrink items-center md:justify-evenly w-full">
+    <header className="lg:mx-32">
+      <nav className="flex flex-col lg:flex-row lg:flex-shrink items-center lg:justify-evenly w-full">
         <Link href="/">
-          <a className="flex py-7 justify-center md:justify-start md:w-1/3 md:mr-8">
+          <a className="flex py-7 justify-center lg:justify-start lg:w-1/3 lg:mr-8">
             <FFLogo />
           </a>
         </Link>
-        <ul className="flex justify-center tracking-wider text-center space-x-1 w-full md:w-4/6">
+        <ul className="flex justify-center tracking-wider text-center space-x-1 w-full lg:w-4/6">
           <Link href="/">
             <a
-              className={`border-t-4 md:border-b-4 md:border-t-0 w-1/3 ${
+              className={`border-t-4 lg:border-b-4 lg:border-t-0 w-1/3 ${
                 router.pathname === "/"
                   ? "border-ffYellow text-ffYellow"
                   : "border-gray-600"
@@ -30,7 +30,7 @@ export const NavBar = () => {
           </Link>
           <Link href="/services">
             <a
-              className={`border-t-4 md:border-b-4 md:border-t-0 w-1/3 ${
+              className={`border-t-4 lg:border-b-4 lg:border-t-0 w-1/3 ${
                 router.pathname === "/services"
                   ? "border-ffYellow text-ffYellow"
                   : "border-gray-600"
@@ -41,7 +41,7 @@ export const NavBar = () => {
           </Link>
           <Link href="/coaches">
             <a
-              className={`border-t-4 md:border-b-4 md:border-t-0 w-1/3 ${
+              className={`border-t-4 lg:border-b-4 lg:border-t-0 w-1/3 ${
                 router.pathname === "/coaches"
                   ? "border-ffYellow text-ffYellow"
                   : "border-gray-600"
@@ -51,7 +51,7 @@ export const NavBar = () => {
             </a>
           </Link>
         </ul>
-        <div className="hidden md:flex md:w-2/6 space-x-8 transform justify-end">
+        <div className="hidden lg:flex lg:w-2/6 space-x-8 transform justify-end">
           <a href="https://www.facebook.com/farrellfitness17/">
             <FontAwesomeIcon
               className="w-8 h-8 cursor-pointer transition-all hover:text-ffYellow"

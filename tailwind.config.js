@@ -27,7 +27,7 @@ module.exports = {
       purple: colors.violet,
       pink: colors.pink,
       bioGray: "#343434",
-      ffYellow: "#E06B16"
+      ffYellow: "#E06B16",
     },
     spacing: {
       px: "1px",
@@ -287,6 +287,9 @@ module.exports = {
       ],
     },
     fontSize: {
+      xxxs: ".33rem",
+      xxs: ".40rem",
+      xss: ".65rem",
       xs: ["0.75rem", { lineHeight: "1rem" }],
       sm: ["0.875rem", { lineHeight: "1.25rem" }],
       base: ["1rem", { lineHeight: "1.5rem" }],
@@ -427,7 +430,7 @@ module.exports = {
       4: "repeat(4, minmax(0, 1fr))",
       5: "repeat(5, minmax(0, 1fr))",
       6: "repeat(6, minmax(0, 1fr))",
-      7: "auto 1fr"
+      7: "auto 1fr",
     },
     height: (theme) => ({
       auto: "auto",
@@ -681,7 +684,7 @@ module.exports = {
       110: "1.1",
       125: "1.25",
       150: "1.5",
-      175:"1.75",
+      175: "1.75",
       500: "5",
       1000: "10",
     },
