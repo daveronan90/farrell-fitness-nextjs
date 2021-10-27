@@ -7,7 +7,15 @@ const services = () => {
   return (
     <main className="overflow-y-auto grid grid-flow-row gap-10 pb-10 lg:mx-32">
       <section className="grid grid-flow-row gap-10">
-        <video src="/assets/videos/OpenGym.mp4" autoPlay loop muted></video>
+        <video
+          src="/assets/videos/OpenGym.mp4"
+          preload
+          playsInline
+          autoPlay
+          loop
+          muted
+          poster=""
+        ></video>
         <div className="space-y-3">
           <h1 className="mx-8 text-4xl tracking-tight font-extrabold w-10/12 leading-9">
             Open Gym
@@ -35,9 +43,12 @@ const services = () => {
       <section className="grid grid-flow-row gap-10">
         <video
           src="/assets/videos/classesVideo.mp4"
+          preload
+          playsInline
           autoPlay
           loop
           muted
+          poster=""
         ></video>
         <div className="space-y-3">
           <h1 className="mx-8 text-4xl tracking-tight font-extrabold w-10/12 leading-9">
@@ -66,7 +77,15 @@ const services = () => {
         <Timetable tableData={classTableData} />
       </section>
       <section className="grid grid-flow-row gap-10">
-        <video src="/assets/videos/trackman.mp4" autoPlay loop muted></video>
+        <video
+          src="/assets/videos/trackman.mp4"
+          preload
+          playsInline
+          autoPlay
+          loop
+          muted
+          poster=""
+        ></video>
         <div className="space-y-3">
           <h1 className="mx-8 text-4xl tracking-tight font-extrabold w-10/12 leading-9">
             Trackman
