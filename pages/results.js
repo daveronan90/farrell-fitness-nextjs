@@ -1,8 +1,5 @@
 import React from "react";
 import Image from "next/image";
-
-import tr1 from "../public/assets/images/transformation1.jpeg";
-
 import Slider from "react-slick";
 
 function importAll(r) {
