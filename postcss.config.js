@@ -2,7 +2,8 @@
 // https://tailwindcss.com/docs/using-with-preprocessors
 module.exports = {
   plugins: {
+    "postcss-100vh-fix": {},
     tailwindcss: {},
     autoprefixer: {},
   },
-}
+};
