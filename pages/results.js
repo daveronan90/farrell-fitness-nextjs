@@ -1,6 +1,5 @@
-import React from "react";
 import Image from "next/image";
-import Slider from "react-slick";
+import { useState } from "react";
 
 function importAll(r) {
   return r.keys().map(r);
@@ -15,26 +14,27 @@ const images = importAll(
 );
 
 const results = () => {
-  let settings = {
-    infinite: true,
-    autoplay: true,
-    fade: true,
-    speed: 1000,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplaySpeed: 3000,
-  };
+  const [zoom, setZoom] = useState(false)
   return (
-    <div className="mx-8 lg:mx-32 relative">
-      <div className="absolute top-0 left-0 right-0 lg:left-40 lg:right-40 bottom-0">
-        <Slider {...settings}>
-          {images.map((img, idx) => (
-            <div key={idx}>
-              <Image src={img} alt={`Transformation ${idx + 1}`} />
-            </div>
-          ))}
-        </Slider>
-      </div>
+    <div className="p-8 lg:mx-32 overflow-y-auto grid gap-8 text-center lg:grid-cols-4">
+      <h1
+        className="lg:col-span-4
+      text-4xl tracking-tight font-extrabold leading-9"
+      >
+        Transformations & Success Stories
+      </h1>
+      <h2 className="lg:col-span-4 uppercase tracking-widest font-bold lg:text-lg text-gray-400 leading-5">
+        Clients who have come to us looking to improve their fitness, change
+        their body composition or just to be a bit more healthy
+      </h2>
+      {images.map((img, idx) => (
+        <div key={idx}>
+          <Image
+            src={img}
+            alt={`Transformation ${idx + 1}`}
+          />
+        </div>
+      ))}
     </div>
   );
 };
