@@ -9,7 +9,6 @@ const services = () => {
       <section className="grid grid-flow-row gap-10">
         <video
           src="/assets/videos/OpenGym.mp4"
-          preload
           playsInline
           autoPlay
           loop
@@ -43,7 +42,6 @@ const services = () => {
       <section className="grid grid-flow-row gap-10">
         <video
           src="/assets/videos/classesVideo.mp4"
-          preload
           playsInline
           autoPlay
           loop
@@ -79,7 +77,6 @@ const services = () => {
       <section className="grid grid-flow-row gap-10">
         <video
           src="/assets/videos/trackman.mp4"
-          preload
           playsInline
           autoPlay
           loop
