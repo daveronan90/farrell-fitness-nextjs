@@ -1,8 +1,15 @@
+import { motion } from "framer-motion";
+
 const about = () => {
   return (
-    <main
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
       className="relative overflow-y-auto grid gap-20 lg:gap-5 py-20 lg:grid-cols-3 lg:mx-32 bg-cover bg-center lg:content-end"
-      style={{ backgroundImage: "url('/assets/images/personalTraining-min.jpg')" }}
+      style={{
+        backgroundImage: "url('/assets/images/personalTraining-min.jpg')",
+      }}
     >
       <section className="h-full flex flex-col items-center justify-center lg:col-start-2">
         <div className="relative mt-24 w-72 h-96 bg-ffYellow rounded-3xl">
@@ -62,7 +69,7 @@ const about = () => {
           </div>
         </div>
       </section>
-    </main>
+    </motion.div>
   );
 };
 

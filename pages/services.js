@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import Timetable from "../components/Timetable";
 import { classTableData } from "../fixtures/classesTimetableData";
 import { golfTableData } from "../fixtures/golfTimetableData";
@@ -5,7 +6,12 @@ import { gymTableData } from "../fixtures/gymTimetableData";
 
 const services = () => {
   return (
-    <main className="overflow-y-auto grid grid-flow-row gap-10 pb-10 lg:mx-32">
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      className="overflow-y-auto grid grid-flow-row gap-10 pb-10 lg:mx-32"
+    >
       <section className="grid grid-flow-row gap-10">
         <video
           src="/assets/videos/OpenGym.mp4"
@@ -13,7 +19,7 @@ const services = () => {
           autoPlay
           loop
           muted
-          poster=""
+          poster="/assets/images/bg-min.png"
         ></video>
         <div className="space-y-3">
           <h1 className="mx-8 text-4xl tracking-tight font-extrabold w-10/12 leading-9">
@@ -46,7 +52,7 @@ const services = () => {
           autoPlay
           loop
           muted
-          poster=""
+          poster="/assets/images/bg-min.png"
         ></video>
         <div className="space-y-3">
           <h1 className="mx-8 text-4xl tracking-tight font-extrabold w-10/12 leading-9">
@@ -81,7 +87,7 @@ const services = () => {
           autoPlay
           loop
           muted
-          poster=""
+          poster="/assets/images/bg-min.png"
         ></video>
         <div className="space-y-3">
           <h1 className="mx-8 text-4xl tracking-tight font-extrabold w-10/12 leading-9">
@@ -107,7 +113,7 @@ const services = () => {
         </div>
         <Timetable tableData={golfTableData} />
       </section>
-    </main>
+    </motion.div>
   );
 };
 

@@ -1,9 +1,15 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { motion } from "framer-motion";
 import FFLogo from "../public/assets/svg/FF.svg";
 
 export default function Home() {
   return (
-    <main className="h-full flex flex-col items-center justify-evenly lg:grid lg: grid-cols-2 lg:mx-32">
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      className="h-full flex flex-col items-center justify-evenly lg:grid lg: grid-cols-2 lg:mx-32"
+    >
       <FFLogo className="col-start-2 lg:transform lg:scale-150 justify-self-center" />
       <div className="mx-4 lg:mx-0 col-start-1 row-start-1">
         <h2 className="uppercase tracking-widest font-bold text-lg lg:text-2xl text-gray-400 leading-5 pb-2">
@@ -41,6 +47,6 @@ export default function Home() {
           />
         </a>
       </div>
-    </main>
+    </motion.div>
   );
 }
