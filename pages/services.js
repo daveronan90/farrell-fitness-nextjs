@@ -1,4 +1,4 @@
-import Timetable from "../Components/Timetable";
+import Timetable from "../components/Timetable";
 import { classTableData } from "../fixtures/classesTimetableData";
 import { golfTableData } from "../fixtures/golfTimetableData";
 import { gymTableData } from "../fixtures/gymTimetableData";

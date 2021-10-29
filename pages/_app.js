@@ -3,7 +3,7 @@ import Head from "next/head";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
 import { useRouter } from "next/dist/client/router";
-import NavBar from "../Components/NavBar";
+import NavBar from "../components/NavBar";
 
 library.add(fab);
 
