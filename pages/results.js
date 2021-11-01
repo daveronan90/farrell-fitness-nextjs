@@ -33,60 +33,67 @@ const results = ({ reviews }) => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      className="p-8 lg:mx-32 overflow-y-auto grid gap-8 text-center lg:grid-cols-5"
+      className="p-8 lg:mx-32 overflow-y-auto grid gap-8 text-center lg:grid-cols-3"
     >
       <h1
-        className="lg:col-span-5
+        className="lg:col-span-3
       text-4xl tracking-tight font-extrabold leading-9"
       >
-        Transformations & Results
+        Reviews & Transformations
       </h1>
-      <h2 className="lg:col-span-5 uppercase tracking-widest font-bold lg:text-lg text-gray-400 leading-5">
+      <h2 className="lg:col-span-3 uppercase tracking-widest font-bold lg:text-lg text-gray-400 leading-5">
         Clients who have come to us looking to improve their fitness, change
         their body composition or improve their lifestyles
       </h2>
-
-      {reviews.map(({ author_name, rating, text }, idx) => (
-        <div
-          key={idx}
-          className={`space-y-4 border rounded-lg p-4 bg-opacity-90 bg-bioGray backdrop-filter backdrop-blur-lg ${
-            activeReview === idx.toString()
-              ? "fixed z-20 transform lg:left-1/2 lg:-translate-x-1/2 top-1/2 -translate-y-1/2 left-0 right-0"
-              : ""
-          }`}
-        >
-          <div className="flex items-center justify-center">
-            <span className="text-ffYellow transform scale-175 px-4">&#8220;</span>
-            <p
-              className={
-                activeReview === "" ? "hover:text-ffYellow cursor-pointer" : ""
-              }
-              id={idx}
-              onClick={(e) => {
-                console.log(e.target.id);
-                e.target.id === activeReview
-                  ? setActiveReview("")
-                  : setActiveReview(e.target.id);
-              }}
-            >
-              {activeReview !== idx.toString() ? createExcerpt(text) : text}
+      <div className="lg:col-span-3 grid lg:grid-cols-3 gap-8">
+        {reviews.map(({ author_name, rating, text }, idx) => (
+          <div
+            key={idx}
+            className={`space-y-4 rounded-lg p-4 bg-opacity-90 bg-bioGray backdrop-filter backdrop-blur-lg col-span-1 ${
+              activeReview === idx.toString()
+                ? "fixed z-20 transform lg:left-1/2 lg:-translate-x-1/2 top-1/2 -translate-y-1/2 left-0 right-0"
+                : ""
+            }`}
+          >
+            <div className="flex items-center justify-center">
+              <span className="text-ffYellow transform scale-175 px-4">
+                &#8220;
+              </span>
+              <p
+                className={`text-sm lg:text-lg ${
+                  activeReview === ""
+                    ? "hover:text-ffYellow cursor-pointer"
+                    : ""
+                }`}
+                id={idx}
+                onClick={(e) => {
+                  console.log(e.target.id);
+                  e.target.id === activeReview
+                    ? setActiveReview("")
+                    : setActiveReview(e.target.id);
+                }}
+              >
+                {activeReview !== idx.toString() ? createExcerpt(text) : text}
+              </p>
+              <span className="text-ffYellow transform scale-175 px-4">
+                &#8221;
+              </span>
+            </div>
+            <div className="flex items-center justify-center">
+              {[...Array(rating).keys()].map((idx) => (
+                <p key={idx}>&#11088;</p>
+              ))}
+            </div>
+            <p className="italic border-t border-ffYellow">
+              {author_name
+                .toLowerCase()
+                .split(" ")
+                .map((word) => word[0].toUpperCase() + word.substr(1))
+                .join(" ")}
             </p>
-            <span className="text-ffYellow transform scale-175 px-4">&#8221;</span>
           </div>
-          <div className="flex items-center justify-center">
-            {[...Array(rating).keys()].map((idx) => (
-              <p key={idx}>&#11088;</p>
-            ))}
-          </div>
-          <p>
-            {author_name
-              .toLowerCase()
-              .split(" ")
-              .map((word) => word[0].toUpperCase() + word.substr(1))
-              .join(" ")}
-          </p>
-        </div>
-      ))}
+        ))}
+      </div>
 
       {images.map((img, idx) => (
         <div

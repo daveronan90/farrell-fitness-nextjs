@@ -35,7 +35,7 @@ const Timetable = ({ tableData }) => {
                   <br />
                   {endTime}
                 </td>
-                <td className="border border-ffYellow text-xxxs sm:text-sm">
+                <td className="bg-black bg-opacity-70 border border-ffYellow text-xxxs sm:text-sm">
                   {mon.split("\n").map((item, idx) => (
                     <span key={idx}>
                       {item}
@@ -43,7 +43,7 @@ const Timetable = ({ tableData }) => {
                     </span>
                   ))}
                 </td>
-                <td className="border border-ffYellow text-xxxs sm:text-sm">
+                <td className="bg-black bg-opacity-70 border border-ffYellow text-xxxs sm:text-sm">
                   {tues.split("\n").map((item, idx) => (
                     <span key={idx}>
                       {item}
@@ -51,7 +51,7 @@ const Timetable = ({ tableData }) => {
                     </span>
                   ))}
                 </td>
-                <td className="border border-ffYellow text-xxxs sm:text-sm">
+                <td className="bg-black bg-opacity-70 border border-ffYellow text-xxxs sm:text-sm">
                   {wed.split("\n").map((item, idx) => (
                     <span key={idx}>
                       {item}
@@ -59,7 +59,7 @@ const Timetable = ({ tableData }) => {
                     </span>
                   ))}
                 </td>
-                <td className="border border-ffYellow text-xxxs sm:text-sm">
+                <td className="bg-black bg-opacity-70 border border-ffYellow text-xxxs sm:text-sm">
                   {thur.split("\n").map((item, idx) => (
                     <span key={idx}>
                       {item}
@@ -67,7 +67,7 @@ const Timetable = ({ tableData }) => {
                     </span>
                   ))}
                 </td>
-                <td className="border border-ffYellow text-xxxs sm:text-sm">
+                <td className="bg-black bg-opacity-70 border border-ffYellow text-xxxs sm:text-sm">
                   {fri.split("\n").map((item, idx) => (
                     <span key={idx}>
                       {item}
@@ -75,7 +75,7 @@ const Timetable = ({ tableData }) => {
                     </span>
                   ))}
                 </td>
-                <td className="border border-ffYellow text-xxxs sm:text-sm">
+                <td className="bg-black bg-opacity-70 border border-ffYellow text-xxxs sm:text-sm">
                   {sat.split("\n").map((item, idx) => (
                     <span key={idx}>
                       {item}
@@ -83,7 +83,7 @@ const Timetable = ({ tableData }) => {
                     </span>
                   ))}
                 </td>
-                <td className="border border-ffYellow text-xxxs sm:text-sm">
+                <td className="bg-black bg-opacity-70 border border-ffYellow text-xxxs sm:text-sm">
                   {sun.split("\n").map((item, idx) => (
                     <span key={idx}>
                       {item}

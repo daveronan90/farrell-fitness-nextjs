@@ -29,7 +29,7 @@ const services = () => {
             Join our State of the art open gym
           </h2>
         </div>
-        <ul className="mx-8 text-ffYellow italic space-y-2 list-outside list-disc uppercase">
+        <ul className="font-extrabold mx-8 text-ffYellow italic space-y-2 list-outside list-disc uppercase">
           <li>Fully stocked Free weight Section</li>
           <li>dedicate full racks</li>
           <li>Full suite of weighted machines</li>
@@ -38,9 +38,9 @@ const services = () => {
         <div>
           <a
             href="https://legitfit.com/authenticate/signin/FarrellFitness"
-            className="mx-8 bg-ffYellow rounded-full font-bold my-2 py-2 px-7 shadow-md"
+            className="mx-8 bg-ffYellow rounded-full font-bold my-2 py-2 px-7 shadow-md hover:bg-opacity-50 transition duration-300 ease-in-out"
           >
-            Sign up for pricing!
+            Sign up now
           </a>
         </div>
         <Timetable tableData={gymTableData} />
@@ -62,7 +62,7 @@ const services = () => {
             Why not check out one of our classes
           </h2>
         </div>
-        <ul className="mx-8 text-ffYellow italic space-y-2 list-outside list-disc uppercase">
+        <ul className="font-extrabold mx-8 text-ffYellow italic space-y-2 list-outside list-disc uppercase">
           <li>strength and conditioning</li>
           <li>beginner classes</li>
           <li>everyone has their own weights and equipment</li>
@@ -73,9 +73,9 @@ const services = () => {
         <div>
           <a
             href="https://legitfit.com/authenticate/signin/FarrellFitness"
-            className="mx-8 bg-ffYellow rounded-full font-bold my-2 py-2 px-7 shadow-md"
+            className="mx-8 bg-ffYellow rounded-full font-bold my-2 py-2 px-7 shadow-md hover:bg-opacity-50 transition duration-300 ease-in-out"
           >
-            Sign up for pricing!
+            Sign up now
           </a>
         </div>
         <Timetable tableData={classTableData} />
@@ -97,7 +97,7 @@ const services = () => {
             Are you looking to improve you scores, we can help!
           </h2>
         </div>
-        <ul className="mx-8 text-ffYellow italic space-y-2 list-outside list-disc uppercase">
+        <ul className="font-extrabold mx-8 text-ffYellow italic space-y-2 list-outside list-disc uppercase">
           <li>tour accuracy simulator</li>
           <li>dial in you swing </li>
           <li>club yardage analysis</li>
@@ -106,9 +106,9 @@ const services = () => {
         <div>
           <a
             href="https://legitfit.com/authenticate/signin/FarrellFitness"
-            className="mx-8 bg-ffYellow rounded-full font-bold my-2 py-2 px-7 shadow-md"
+            className="mx-8 bg-ffYellow rounded-full font-bold my-2 py-2 px-7 shadow-md hover:bg-opacity-50 transition duration-300 ease-in-out"
           >
-            Sign up for pricing!
+            Sign up now
           </a>
         </div>
         <Timetable tableData={golfTableData} />
