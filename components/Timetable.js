@@ -7,9 +7,7 @@ const Timetable = ({ tableData }) => {
         <thead>
           <tr>
             <th className="w-1/12">
-              <div className="w-full flex justify-center items-center">
-                <FFLogo className="transform scale-75 lg:scale-100" />
-              </div>
+              
             </th>
             <th className="border w-1/12 bg-bioGray">MON</th>
             <th className="border w-1/12 bg-bioGray">TUES</th>

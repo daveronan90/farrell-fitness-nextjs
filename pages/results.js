@@ -46,7 +46,7 @@ const results = ({ reviews }) => {
         their body composition or improve their lifestyles
       </h2>
       <div className="lg:col-span-3 grid lg:grid-cols-3 gap-8">
-        {reviews.map(({ author_name, rating, text }, idx) => (
+        {reviews.slice(0, 3).map(({ author_name, rating, text }, idx) => (
           <div
             key={idx}
             className={`space-y-4 rounded-lg p-4 bg-opacity-90 bg-bioGray backdrop-filter backdrop-blur-lg col-span-1 ${
@@ -94,7 +94,14 @@ const results = ({ reviews }) => {
           </div>
         ))}
       </div>
-
+      <h1
+        className="lg:col-span-3
+      text-4xl tracking-tight font-extrabold leading-9 hover:text-ffYellow"
+      >
+        <a href="https://www.google.ie/maps/place/Farrell+Fitness/@52.3865674,-6.9318581,17z/data=!4m7!3m6!1s0x4842b6b899f0bce7:0x68eb6b7c600b3055!8m2!3d52.3865674!4d-6.9296694!9m1!1b1">
+          See more reviews...
+        </a>
+      </h1>
       {images.map((img, idx) => (
         <div
           key={idx}
