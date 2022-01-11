@@ -1,6 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { motion } from "framer-motion";
-import FFLogo from "../public/assets/svg/FF.svg";
 
 export default function Home() {
   return (
@@ -21,7 +20,7 @@ export default function Home() {
         </h1>
         <div className="my-10">
           <a
-            href="https://legitfit.com/authenticate/signin/FarrellFitness"
+            href="https://legitfit.com/authenticate/signup/FarrellFitness"
             className="bg-ffYellow rounded-full font-bold py-2 px-7 shadow-md hover:bg-opacity-50 transition duration-300 ease-in-out"
           >
             Join Now

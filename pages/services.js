@@ -37,7 +37,7 @@ const services = () => {
         </ul>
         <div>
           <a
-            href="https://legitfit.com/authenticate/signin/FarrellFitness"
+            href="https://legitfit.com/authenticate/signup/FarrellFitness"
             className="mx-8 bg-ffYellow rounded-full font-bold my-2 py-2 px-7 shadow-md hover:bg-opacity-50 transition duration-300 ease-in-out"
           >
             Sign up now
@@ -80,7 +80,7 @@ const services = () => {
         </ul>
         <div>
           <a
-            href="https://legitfit.com/authenticate/signin/FarrellFitness"
+            href="https://legitfit.com/authenticate/signup/FarrellFitness"
             className="mx-8 bg-ffYellow rounded-full font-bold my-2 py-2 px-7 shadow-md hover:bg-opacity-50 transition duration-300 ease-in-out"
           >
             Sign up now
@@ -113,7 +113,7 @@ const services = () => {
         </ul>
         <div>
           <a
-            href="https://legitfit.com/authenticate/signin/FarrellFitness"
+            href="https://legitfit.com/authenticate/signup/FarrellFitness"
             className="mx-8 bg-ffYellow rounded-full font-bold my-2 py-2 px-7 shadow-md hover:bg-opacity-50 transition duration-300 ease-in-out"
           >
             Sign up now
@@ -192,7 +192,7 @@ const services = () => {
         </div>
         <div>
           <a
-            href="https://legitfit.com/authenticate/signin/FarrellFitness"
+            href="https://legitfit.com/authenticate/signup/FarrellFitness"
             className="mx-8 bg-ffYellow rounded-full font-bold my-2 py-2 px-7 shadow-md hover:bg-opacity-50 transition duration-300 ease-in-out"
           >
             Sign up now
@@ -233,7 +233,7 @@ const services = () => {
         </ul>
         <div>
           <a
-            href="https://legitfit.com/authenticate/signin/FarrellFitness"
+            href="https://legitfit.com/authenticate/signup/FarrellFitness"
             className="mx-8 bg-ffYellow rounded-full font-bold my-2 py-2 px-7 shadow-md hover:bg-opacity-50 transition duration-300 ease-in-out"
           >
             Sign up now
@@ -273,7 +273,7 @@ const services = () => {
         </ul>
         <div>
           <a
-            href="https://legitfit.com/authenticate/signin/FarrellFitness"
+            href="https://legitfit.com/authenticate/signup/FarrellFitness"
             className="mx-8 bg-ffYellow rounded-full font-bold my-2 py-2 px-7 shadow-md hover:bg-opacity-50 transition duration-300 ease-in-out"
           >
             Sign up now
