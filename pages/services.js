@@ -43,6 +43,14 @@ const services = () => {
             Sign up now
           </a>
         </div>
+        <div className="relative border-2 py-2 border-ffYellow rounded-md w-10/12 place-self-center">
+          <div className="w-6 h-6 rounded-full bg-ffYellow absolute -top-3 -left-3 animate-ping" />
+          <div className="w-6 h-6 rounded-full bg-ffYellow absolute -top-3 -left-3" />
+          <h1 className="text-center mx-8 lg:text-2xl tracking-tight font-black uppercase w-10/12 leading-9">
+            Gym time isn't limited to one hour, if your workout takes longer
+            just book additional slots!
+          </h1>
+        </div>
         <Timetable tableData={gymTableData} />
       </section>
       <section id="classes" className="grid grid-flow-row gap-10">
@@ -158,8 +166,8 @@ const services = () => {
             <h1 className="absolute z-20 bottom-2 right-4 text-xl">Cupping</h1>
           </div>
           <p>
-            Special cups are placed on the skin to create suction. This
-            suction increases the blood flow to affected area. Enhanced blood flow under
+            Special cups are placed on the skin to create suction. This suction
+            increases the blood flow to affected area. Enhanced blood flow under
             the cups draws impurities and toxins away from the nearby tissues
             and organs towards the surface for elimination.
           </p>
