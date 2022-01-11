@@ -12,7 +12,7 @@ const services = () => {
       exit={{ opacity: 0 }}
       className="overflow-y-auto grid grid-flow-row gap-10 pb-10 lg:mx-32 text-shadow-xl"
     >
-      <section className="grid grid-flow-row gap-10">
+      <section id="gym" className="grid grid-flow-row gap-10">
         <video
           src="/assets/videos/OpenGym.mp4"
           playsInline
@@ -45,7 +45,7 @@ const services = () => {
         </div>
         <Timetable tableData={gymTableData} />
       </section>
-      <section className="grid grid-flow-row gap-10">
+      <section id="classes" className="grid grid-flow-row gap-10">
         <video
           src="/assets/videos/classesVideo.mp4"
           playsInline
@@ -80,7 +80,7 @@ const services = () => {
         </div>
         <Timetable tableData={classTableData} />
       </section>
-      <section className="grid grid-flow-row gap-10">
+      <section id="golf" className="grid grid-flow-row gap-10">
         <video
           src="/assets/videos/trackman.mp4"
           playsInline
@@ -113,7 +113,7 @@ const services = () => {
         </div>
         {/* <Timetable tableData={golfTableData} /> */}
       </section>
-      <section className="grid grid-flow-row gap-10">
+      <section id="physio" className="grid grid-flow-row gap-10">
         <video
           src="/assets/videos/ptVideo.mp4"
           playsInline
@@ -126,12 +126,12 @@ const services = () => {
           <h1 className="mx-8 text-4xl tracking-tight font-extrabold w-10/12 leading-9">
             Physical Therapy
           </h1>
-          <h2 className=" mx-8 uppercase tracking-widest font-bold text-lg text-gray-400 leading-5 pb-2">
+          <h2 className="mx-8 uppercase tracking-widest font-bold text-lg text-gray-400 leading-5 pb-2">
             Do you suffer from aches and pain or mobilty issues, we can help!
           </h2>
         </div>
-        <div className="mx-8 grid lg:grid-cols-3 gap-10 justify-center  font-black">
-          <div className="relative lg:row-start-1 lg:col-start-1">
+        <div className="mx-8 grid lg:grid-cols-3 gap-10 justify-center text-ffYellow font-black italic">
+          <div className="relative lg:row-start-1 lg:col-start-1 ">
             <img
               className="h-full w-full"
               src="/assets/images/sports-massage.jpg"
@@ -158,11 +158,8 @@ const services = () => {
             <h1 className="absolute z-20 bottom-2 right-4 text-xl">Cupping</h1>
           </div>
           <p>
-            Cupping therapy is one of the oldest and most effective method of
-            releasing the toxins from body tissue and organs. It is a practice
-            where special cups are placed on the skin to create suction. This
-            causes the tissue beneath the cup to be drawn up and swell causing
-            increase in blood flow to affected area. Enhanced blood flow under
+            Special cups are placed on the skin to create suction. This
+            suction increases the blood flow to affected area. Enhanced blood flow under
             the cups draws impurities and toxins away from the nearby tissues
             and organs towards the surface for elimination.
           </p>
@@ -194,7 +191,7 @@ const services = () => {
           </a>
         </div>
       </section>
-      <section className="grid grid-flow-row gap-10">
+      <section id="team" className="grid grid-flow-row gap-10">
         <video
           src="/assets/videos/teamVideo.mp4"
           playsInline
@@ -235,8 +232,12 @@ const services = () => {
           </a>
         </div>
       </section>
-      <section className="grid grid-flow-row gap-10">
-        <img src="/assets/images/stykuVideo.gif" alt="styku" className="w-full"/>
+      <section id="styku" className="grid grid-flow-row gap-10">
+        <img
+          src="/assets/images/stykuVideo.gif"
+          alt="styku"
+          className="w-full"
+        />
         <div className="space-y-3">
           <h1 className="mx-8 text-4xl tracking-tight font-extrabold w-10/12 leading-9">
             Styku 3D Body Composition
@@ -250,8 +251,8 @@ const services = () => {
             Lightweight, Portable, and Intuitive
             <br />
             <br />
-            Performs a 3D body scan in only 35 seconds, with millions of measurements
-            with 2mm accuracy and reconstruct your body in 3D.
+            Performs a 3D body scan in only 35 seconds, with millions of
+            measurements with 2mm accuracy and reconstruct your body in 3D.
           </li>
           <li className="">
             See the Difference in your Body's Shape in 3D.
