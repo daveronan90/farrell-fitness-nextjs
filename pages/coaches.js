@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import Image from "next/image";
 import { useState } from "react";
 import { team } from "../fixtures/staffBios";
 
@@ -38,7 +39,7 @@ const about = () => {
               <p className="text-sm">
                 Hi, and a warm welcome to Farrell Fitness. Personally I love
                 meeting people and connecting with them on a personal level. I
-                try to gain asmuch experience and knowledge from everyone I
+                try to gain as much experience and knowledge from everyone I
                 meet.
               </p>
             </div>
@@ -86,9 +87,11 @@ const about = () => {
               <h2 className="text-lg">Eoghan</h2>
               <h1 className="text-2xl font-bold text-ffYellow">Coach</h1>
               <p className="text-sm">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Eligendi aut assumenda eius non molestiae autem ut ad iure
-                perspiciatis consequatur corporis dolor, nemo, .
+                Eoghan’s journey into the industry started after a serious
+                sporting injury ended his playing career. Needing something to
+                fill that competitive void, he noticed that the standard of
+                personal training just wasn’t good enough, and saw an
+                opportunity to make a difference.
               </p>
             </div>
           </div>
@@ -115,7 +118,7 @@ const about = () => {
               <p className="text-sm">
                 Hi, and a warm welcome to Farrell Fitness. Personally I love
                 meeting people and connecting with them on a personal level. I
-                try to gain asmuch experience and knowledge from everyone I
+                try to gain as much experience and knowledge from everyone I
                 meet.
               </p>
             </div>
@@ -139,10 +142,10 @@ const about = () => {
               <h2 className="text-lg">Rob Conway</h2>
               <h1 className="text-2xl font-bold text-ffYellow">Coach</h1>
               <p className="text-sm">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis
-                fugiat inventore quisquam, numquam alias quidem earum quibusdam
-                blanditiis commodi nesciunt id minus fuga enim voluptas sed eos!
-                Exercitationem, hic minus.
+                Meet Rob, he is a fully qualified Strength & Conditioning Coach
+                with 8+ years of experience in the fitness sector, he has helped
+                people who lack the inspiration to stay focused and motivated
+                them in reaching their goals.
               </p>
             </div>
           </div>
@@ -155,7 +158,7 @@ const about = () => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
-              className="fixed inset-0 -top-20 flex flex-col items-center py-20 px-8 lg:px-24 overflow-y-auto"
+              className="fixed inset-0 -top-20 flex flex-col items-center pt-20 px-8 lg:px-24 overflow-y-auto z-0"
               style={{
                 background:
                   "linear-gradient(270deg, #000000 38.67%, #5F2800 101.82%)",
@@ -163,20 +166,28 @@ const about = () => {
               onClick={() => setShowBio(null)}
               key={idx}
             >
-              <h1 className="uppercase leading-10 text-xl lg:text-4xl font-bold tracking-widest">
+              <h1 className="relative z-10 uppercase leading-10 text-xl lg:text-4xl font-bold tracking-widest">
                 meet your coach
               </h1>
-              <div>
-                <div className="lg:w-1/2 space-y-3 lg:space-y-10 mt-5 lg:mt-10">
+              <div className="flex h-full items-start justify-start">
+                <div className="relative z-10 lg:w-1/2 space-y-4 mt-5 lg:mt-10">
                   <h2 className="text-ffYellow uppercase lg:text-2xl font-bold">
                     {name}
                   </h2>
                   <h2 className="text-ffYellow uppercase lg:text-2xl font-bold">
                     {position}
                   </h2>
-                  <p className="text-xss lg:text-xs">{bio}</p>
+                  <p className="text-xss lg:text-xs">
+                    {bio.split("\n").map((item, key) => (
+                      <span key={key}>
+                        {item}
+                        <br />
+                        <br />
+                      </span>
+                    ))}
+                  </p>
                   <h2 className="text-gray-400 uppercase text-xs lg:text-2xl font-medium underline tracking-widest">
-                    Acemdemic qualifications
+                    Academic qualifications
                   </h2>
                   <ul className="ml-4 list-disc text-xss lg:text-xs">
                     {quals.map((qual, idx) => (
@@ -184,12 +195,11 @@ const about = () => {
                     ))}
                   </ul>
                 </div>
+                <div
+                  style={{ backgroundImage: `url('/assets/images/${imgUrl}')` }}
+                  className="opacity-25 lg:opacity-100 fixed inset-0 -bottom-20 lg:static lg:w-1/2 h-full bg-cover bg-center bg-no-repeat"
+                />
               </div>
-              <img
-                src={`/assets/images/${imgUrl}`}
-                alt={name}
-                className="absolute lg:-bottom-40 lg:-right-40 scale-90 -bottom-20 -right-20 z-0"
-              />
             </motion.div>
           )
         );
