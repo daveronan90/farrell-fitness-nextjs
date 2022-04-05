@@ -29,6 +29,7 @@ function MyApp({ Component, pageProps }) {
           name="keywords"
           content="gym, fitness, golf, lifting, gym near me, workout, diet, trackman, wexford gym"
         />
+        <meta name="google-site-verification" content="dYz9PJuXHThmWN1wWg3ZB3odoaUeVPsfZ3ly1ctXjhk" />
         <link
           rel="stylesheet"
           type="text/css"
