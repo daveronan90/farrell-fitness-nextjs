@@ -13,7 +13,7 @@ const about = () => {
       exit={{ opacity: 0 }}
       className="relative overflow-y-auto flex flex-col py-20 lg:mx-32 bg-cover bg-center lg:content-end lg:space-y-16 space-y-8"
       style={{
-        backgroundImage: "url('/assets/images/robbie.jpg')",
+        backgroundImage: "url('/assets/images/robbie.webp')",
       }}
     >
       <div className="grid grid-cols-1 lg:grid-cols-2 space-y-8 lg:space-y-0 lg:flex-row lg:justify-around">
@@ -56,7 +56,7 @@ const about = () => {
             <div
               className="rounded-full h-44 w-44 bg-black absolute -top-22 left-14 bg-no-repeat bg-cover bg-center"
               style={{
-                backgroundImage: "url('/assets/images/cat.jpg')",
+                backgroundImage: "url('/assets/images/cat.webp')",
               }}
             />
             <div className="absolute flex flex-col justify-center items-center text-center top-24 px-8">

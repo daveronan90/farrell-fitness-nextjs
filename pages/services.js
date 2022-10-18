@@ -90,7 +90,7 @@ const services = () => {
       </section>
       <section id="golf" className="grid grid-flow-row gap-10">
         <video
-          src="/assets/videos/trackman.mp4"
+          src="/assets/videos/trackman.webm"
           playsInline
           autoPlay
           loop
@@ -201,7 +201,7 @@ const services = () => {
       </section>
       <section id="team" className="grid grid-flow-row gap-10">
         <video
-          src="/assets/videos/teamVideo.mp4"
+          src="/assets/videos/teamVideo.webm"
           playsInline
           autoPlay
           loop
@@ -241,11 +241,16 @@ const services = () => {
         </div>
       </section>
       <section id="styku" className="grid grid-flow-row gap-10">
-        <img
-          src="/assets/images/stykuVideo.gif"
-          alt="styku"
+        <video
+          src="/assets/videos/stykuVideo.webm"
+          playsInline
+          autoPlay
+          loop
+          muted
+          poster="/assets/images/bg-min.png"
           className="w-full"
-        />
+        ></video>
+
         <div className="space-y-3">
           <h1 className="mx-8 text-4xl tracking-tight font-extrabold w-10/12 leading-9">
             Styku 3D Body Composition
