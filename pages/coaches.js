@@ -13,14 +13,14 @@ const about = () => {
       exit={{ opacity: 0 }}
       className="relative overflow-y-auto flex flex-col py-20 lg:mx-32 bg-cover bg-center lg:content-end lg:space-y-16 space-y-8"
       style={{
-        backgroundImage: "url('/assets/images/personalTraining-min.jpg')",
+        backgroundImage: "url('/assets/images/robbie.jpg')",
       }}
     >
-      <div className="grid grid-cols-1 lg:grid-cols-3 space-y-8 lg:space-y-0 lg:flex-row lg:justify-around">
+      <div className="grid grid-cols-1 lg:grid-cols-2 space-y-8 lg:space-y-0 lg:flex-row lg:justify-around">
         <section
           onClick={() => setShowBio("Robbie")}
           id="robbie"
-          className="h-full flex flex-col items-center justify-center lg:col-start-2"
+          className="h-full flex flex-col items-center justify-center"
         >
           <div className="relative mt-24 w-72 h-96 bg-ffYellow rounded-3xl">
             <div className="absolute inset-0 top-2 bg-bioGray rounded-3xl " />
@@ -46,59 +46,6 @@ const about = () => {
           </div>
         </section>
         <section
-          onClick={() => setShowBio("Shannon")}
-          id="shannon"
-          className="h-full flex flex-col items-center justify-center lg:col-start-1"
-        >
-          <div className="relative mt-24 w-72 h-96 bg-ffYellow rounded-3xl">
-            <div className="absolute inset-0 top-2 bg-bioGray rounded-3xl " />
-            <div className="rounded-full h-48 w-48 bg-ffYellow absolute -top-24 left-12" />
-            <div
-              className="rounded-full h-44 w-44 bg-black absolute -top-22 left-14 bg-no-repeat bg-cover bg-center"
-              style={{
-                backgroundImage: "url('/assets/images/shannon-min.jpg')",
-              }}
-            />
-            <div className="absolute flex flex-col justify-center items-center text-center top-24 px-8">
-              <h2 className="text-lg">Shannon</h2>
-              <h1 className="text-2xl font-bold text-ffYellow">Coach</h1>
-              <p className="text-sm">
-                Shannon has a huge passion and interest in the health and
-                fitness industry. She’s very outgoing and chatty.
-              </p>
-            </div>
-          </div>
-        </section>
-        <section
-          onClick={() => setShowBio("Eoghan")}
-          id="eoghan"
-          className="h-full flex flex-col items-center justify-center lg:col-start-3"
-        >
-          <div className="relative mt-24 w-72 h-96 bg-ffYellow rounded-3xl">
-            <div className="absolute inset-0 top-2 bg-bioGray rounded-3xl " />
-            <div className="rounded-full h-48 w-48 bg-ffYellow absolute -top-24 left-12" />
-            <div
-              className="rounded-full h-44 w-44 bg-black absolute -top-22 left-14 bg-no-repeat bg-cover bg-center"
-              style={{
-                backgroundImage: "url('/assets/images/eoghan-min.jpg')",
-              }}
-            />
-            <div className="absolute flex flex-col justify-center items-center text-center top-24 px-8">
-              <h2 className="text-lg">Eoghan</h2>
-              <h1 className="text-2xl font-bold text-ffYellow">Coach</h1>
-              <p className="text-sm">
-                Eoghan’s journey into the industry started after a serious
-                sporting injury ended his playing career. Needing something to
-                fill that competitive void, he noticed that the standard of
-                personal training just wasn’t good enough, and saw an
-                opportunity to make a difference.
-              </p>
-            </div>
-          </div>
-        </section>
-      </div>
-      <div className="flex flex-col space-y-8 lg:space-y-0 lg:flex-row lg:justify-around">
-        <section
           onClick={() => setShowBio("Cat")}
           id="cat"
           className="h-full flex flex-col items-center justify-center"
@@ -120,32 +67,6 @@ const about = () => {
                 meeting people and connecting with them on a personal level. I
                 try to gain as much experience and knowledge from everyone I
                 meet.
-              </p>
-            </div>
-          </div>
-        </section>
-        <section
-          onClick={() => setShowBio("Rob")}
-          id="rob"
-          className="h-full flex flex-col items-center justify-center "
-        >
-          <div className="relative mt-24 w-72 h-96 bg-ffYellow rounded-3xl">
-            <div className="absolute inset-0 top-2 bg-bioGray rounded-3xl " />
-            <div className="rounded-full h-48 w-48 bg-ffYellow absolute -top-24 left-12" />
-            <div
-              className="rounded-full h-44 w-44 bg-black absolute -top-22 left-14 bg-no-repeat bg-cover bg-center"
-              style={{
-                backgroundImage: "url('/assets/images/robC.jpg')",
-              }}
-            />
-            <div className="absolute flex flex-col justify-center items-center text-center top-24 px-8">
-              <h2 className="text-lg">Rob Conway</h2>
-              <h1 className="text-2xl font-bold text-ffYellow">Coach</h1>
-              <p className="text-sm">
-                Meet Rob, he is a fully qualified Strength & Conditioning Coach
-                with 8+ years of experience in the fitness sector, he has helped
-                people who lack the inspiration to stay focused and motivated
-                them in reaching their goals.
               </p>
             </div>
           </div>
