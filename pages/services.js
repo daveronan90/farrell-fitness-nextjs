@@ -51,7 +51,19 @@ const services = () => {
             just book additional slots!
           </h1>
         </div>
-        <Timetable tableData={gymTableData} />
+        <h1 className="mx-8 text-4xl tracking-tight font-extrabold w-10/12 leading-9 text-center">
+          OPENING HOURS
+        </h1>
+        <div className="text-center space-y-8">
+          <h2 className=" mx-8 uppercase tracking-widest font-bold leading-5 pb-2 flex justify-around items-center">
+            <div>MONDAY - FRIDAY</div>
+            <span className="bg-ffYellow px-4 py-2">6:00AM - 9:30PM</span>
+          </h2>
+          <h2 className=" mx-8 uppercase tracking-widest font-bold leading-5 pb-2 flex justify-around items-center">
+            <div>SATURDAY - SUNDAY</div>
+            <span className="bg-ffYellow px-4 py-2">8:00AM - 4:00PM </span>
+          </h2>
+        </div>
       </section>
       <section id="classes" className="grid grid-flow-row gap-10">
         <video
