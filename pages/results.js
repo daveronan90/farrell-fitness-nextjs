@@ -152,6 +152,6 @@ export const getStaticProps = async () => {
   const { result } = await res.json();
 
   return {
-    props: result ? result : {},
+    props: result,
   };
 };
