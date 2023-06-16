@@ -146,12 +146,12 @@ export default results;
 
 export const getStaticProps = async () => {
   const res = await fetch(
-    "https://maps.googleapis.com/maps/api/place/details/json?place_id=ChIJ57zwmbi2QkgRVTALYHxr62g&fields=reviews&key=AIzaSyAE-Nvqy7hNMDDwcktKdYuEFbc9wuH4pRk"
+    `https://maps.googleapis.com/maps/api/place/details/json?place_id=ChIJ57zwmbi2QkgRVTALYHxr62g&fields=reviews&key=${process.env.GMAPS_API_KEY}`
   );
 
   const { result } = await res.json();
 
   return {
-    props: result,
+    props: result ? result : {},
   };
 };
